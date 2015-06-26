@@ -1,0 +1,55 @@
+== README
+Write a Rails app that lets users view books and book reviews.
+
+✓ A book must have a title, author, ISBN and genre.
+
+✓ Visiting /books should have a list of all the books.
+
+✓ Visiting /books/new should let a user add a new book with a form.
+
+✓ Visiting /books/3 should let the user see the details of a book with id 3.
+
+✓ Visiting the root path lets the use see all the books.
+
+-- First get the above to work. Then you want to create the reviews:
+
+✓ A book can have many reviews. Each review is a number between 1 and 100, a body (text of review) and timestamp of when it was created.
+
+✓ Visiting /books/3/reviews/new lets a user create a review for book with id 3 in a form.
+
+Visiting /books/3 should have all the reviews.
+
+Don't worry about user authentication. Assume all the reviews are anonymous.
+
+
+
+
+
+
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

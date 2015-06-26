@@ -1,0 +1,12 @@
+<h1><%= @book.title %></h1>
+<h4><%= @book.author %></h4>
+<h6><%= @book.isbn %></h6>
+<h6><%= @book.genre %></h6>
+
+<h1> Reviews </h1>
+
+<p>
+<% @reviews.each do |review| %>
+  <%= review.rating %>: <%= review.body %>
+<% end %>
+</p>
