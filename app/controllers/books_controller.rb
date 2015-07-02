@@ -10,7 +10,7 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
    if @book.save
-     flash[:notice] = "Book asked"
+     flash[:notice] = "Book added"
      redirect_to '/'
    else
      flash[:error] = @book.errors.full_messages.join(". ")
