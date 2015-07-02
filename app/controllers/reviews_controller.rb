@@ -4,10 +4,6 @@ class ReviewsController < ApplicationController
     @book = Book.find(params[:book_id])
   end
 
-  def index
-    @reviews = Review.all
-  end
-
   def create
     @review = Review.new(review_params)
     @book = Book.find(params[:book_id])

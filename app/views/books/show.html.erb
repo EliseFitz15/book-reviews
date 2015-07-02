@@ -4,9 +4,10 @@
 <h6><%= @book.genre %></h6>
 
 <h1> Reviews </h1>
+<%= link_to "Write Review", new_book_review_path(@book) %>
 
-<p>
+<div class="review">
 <% @reviews.each do |review| %>
-  <%= review.rating %>: <%= review.body %>
+<p>  Rating: <%= review.rating %> </p>
+  <p> <%= review.body %><p>
 <% end %>
-</p>
